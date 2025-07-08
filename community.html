@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discussion Forum</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="community.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="your-logo-url.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            EduQuestia
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="About.html">About</a>
+                        <a class="dropdown-item" href="login and signin/login.html">Login</a>
+                        <a class="dropdown-item" href="login and signin/signup.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2><b>Discussion Forum</b></h2>
+        <div class="discussion" id="discussion">
+            <!-- Existing posts will be added here -->
+        </div>
+
+        <div class="post">
+            <h3>Post a Query</h3>
+            <input type="text" id="queryText" placeholder="Your question"><br>
+            <input type="text" id="queryName" placeholder="Your name"><br>
+            <button onclick="postQuery()">Post</button>
+        </div>
+
+        <div class="post">
+            <h3>Respond to Query</h3>
+            <select id="querySelection"></select><br>
+            <input type="text" id="responseName" placeholder="Your name"><br>
+            <textarea id="responseText" placeholder="Your response"></textarea><br>
+            <button onclick="submitResponse()">Post</button>
+        </div>
+        
+    </div>
+    <script src="community.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <title>My Profile</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo2.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            EduQuestia
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="About.html">About</a>
+                        <a class="dropdown-item" href="login and signin/login.html">Login</a>
+                        <a class="dropdown-item" href="login and signin/signup.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <section class="About">
+        <div>
+        <h1>About EduQuestia</h1>
+    <p class="lead">EduQuestia is a Question and Answer platform designed specifically for students of a college. It allows students to post questions on various topics related to campus education with specific stream filtering and get answers from their peers.</p>
+</div>
+
+    </section>
+    <section class="Mission">
+        <div>
+        <h2>Our Mission</h2>
+        <p>Our mission is to create a collaborative environment where students can share knowledge, ask questions, and learn from each other. We aim to make information easily accessible and foster a community of learners.</p>
+        </div>
+    </section>
+
+    <section class="keyFeatures">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Topic Diversity:</strong> Post questions on a wide range of topics including education, sports, and specific streams like science, engineering, arts, and business.</li>
+      <li><strong>Peer Interaction:</strong> Receive answers from your peers to get a well-rounded perspective on your queries.</li>
+      <li><strong>Stream-Specific Sessions:</strong> Participate in Q&A sessions tailored to your specific field of study, ensuring relevant and focused discussions.</li>
+      <li><strong>User-Friendly Interface:</strong> Enjoy a simple and intuitive interface designed to make asking and answering questions easy and efficient.</li>
+      <li><strong>Branch-Specific Answers:</strong> Filter answers based on your branch or stream to get the most relevant information.</li>
+      <li><strong>Collaborative Learning:</strong> Foster a collaborative learning environment where knowledge is shared and learning is collective.</li>
+    </ul>
+    </section>
+
+    <section class="team">
+        <h2>Meet the Team</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/bindu.jpg" class="card-img-top" alt="Team Member 1">
+          <div class="card-body">
+            <h5 class="card-title">Bindu Sri Potnuru</h5>
+            <p class="card-text">Description of Team Member 1's role.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/1.jpg" class="card-img-top" alt="Team Member 2">
+          <div class="card-body">
+            <h5 class="card-title">Sreeya Bhogi</h5>
+            <p class="card-text">Description of Team Member 2's role.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/likki (2).jpg" class="card-img-top" alt="Team Member 3">
+          <div class="card-body">
+            <h5 class="card-title">Likhitha Nunna</h5>
+            <p class="card-text">Description of Team Member 3's role.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 4">
+          <div class="card-body">
+            <h5 class="card-title">Mokshitha Mullapudi</h5>
+            <p class="card-text">Description of Team Member 4's role.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 5">
+          <div class="card-body">
+            <h5 class="card-title">Samhith Mannam</h5>
+            <p class="card-text">Description of Team Member 5's role.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 6">
+          <div class="card-body">
+            <h5 class="card-title">Boopathi Sai Raju</h5>
+            <p class="card-text">Description of Team Member 6's role.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+    <script>
+        function enableEditing(section) {
+            const sectionContent = section.querySelector('div, ul');
+            const editButton = section.querySelector('button');
+            let isEditing = false;
+
+            editButton.addEventListener('click', () => {
+                isEditing = !isEditing;
+                sectionContent.contentEditable = isEditing;
+                editButton.classList.toggle('editing');
+            });
+
+            sectionContent.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && isEditing) {
+                    isEditing = false;
+                    sectionContent.contentEditable = false;
+                    editButton.classList.remove('editing');
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section:not(.butto)');            
+            sections.forEach(section => {
+                const sectionHeader = section.querySelector('h2');
+                const editButton = document.createElement('button');
+                editButton.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+                sectionHeader.appendChild(editButton);
+                enableEditing(section);
+            });
+        });
+    </script>
+
+    <!-- Include Bootstrap's JavaScript dependencies (jQuery and Popper.js) and Bootstrap's JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

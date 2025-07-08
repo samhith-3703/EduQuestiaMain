@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <title>My Profile</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo2.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            EduQuestia
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="About.html">About</a>
+                        <a class="dropdown-item" href="login and signin/login.html">Login</a>
+                        <a class="dropdown-item" href="login and signin/signup.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="intro">
+            <img src="photo.png" alt="Your Name">
+            <h1>M.Mokshita <h3>VU21CSEN0600144</h3></h1>
+        </div>
+    </header>
+    <section class="About">
+        <h2>About me</h2>
+        <div>
+            <ul>
+                <li><b>Stream:</b> Bachelor of Technology</li><br>
+                <li><b>Year:</b> 3rd year</li><br>
+                <li><b>Branch:</b> CSE(IOT)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <div>
+            <p><b>Email:</b> mullapudimokshita3737@gmail.com</p>
+            <p><b>LinkedIn:</b> linkedin.com/in/mokshita-mullapudi-9b795b256</p>
+        </div>
+    </section>
+    <section class="intrest">
+        <h2>My Areas of Intrests</h2>
+        <div>
+            <ul>
+                <li>IOT Development</li><br>
+                <li>Exploring AI use cases</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="butto">
+        <a href="queries.html" class="butto"><h2>My Queries</h2></a>
+    </section>
+   
+    <script>
+        function enableEditing(section) {
+            const sectionContent = section.querySelector('div, ul');
+            const editButton = section.querySelector('button');
+            let isEditing = false;
+
+            editButton.addEventListener('click', () => {
+                isEditing = !isEditing;
+                sectionContent.contentEditable = isEditing;
+                editButton.classList.toggle('editing');
+            });
+
+            sectionContent.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && isEditing) {
+                    isEditing = false;
+                    sectionContent.contentEditable = false;
+                    editButton.classList.remove('editing');
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section:not(.butto)');            
+            sections.forEach(section => {
+                const sectionHeader = section.querySelector('h2');
+                const editButton = document.createElement('button');
+                editButton.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+                sectionHeader.appendChild(editButton);
+                enableEditing(section);
+            });
+        });
+    </script>
+
+    <!-- Include Bootstrap's JavaScript dependencies (jQuery and Popper.js) and Bootstrap's JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

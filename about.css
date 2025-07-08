@@ -1,0 +1,154 @@
+body {
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CDE1E8;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+/* Additional styling for the profile icon and dropdown toggle */
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+}
+
+/* Style for the navbar toggler (hamburger menu) */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Additional styling to ensure proper alignment and spacing */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-item .fa-user {
+    font-size: 1.5rem;
+}
+
+.nav-item .fa-bars {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #CDE1E8;
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+.intro img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.About,.Mission {
+    margin: 30px 20px;
+    padding: 20px;
+    border: 2.5px solid black;
+    background-color: rgb(244, 241, 241);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ .keyFeatures,.team {
+    margin: 30px 20px;
+    padding: 20px;
+    border: 2.5px solid black;
+    background-color: rgb(244, 241, 241);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: black;
+}
+
+ul {
+    margin-left: 10px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.editing .fa-pencil-alt:before {
+    content: "\f0c7"; 
+}
+
+div[contenteditable="true"], ul[contenteditable="true"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.about,
+.mission,
+.key-features,
+.team {
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: rgb(244, 241, 241);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about h1,
+.mission h2,
+.key-features h2,
+.team h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.about p,
+.mission p,
+.key-features ul,
+.team .row {
+    color: black;
+}
+
+.about p strong,
+.key-features ul strong,
+.team .card-title {
+    font-weight: bold;
+}
+
+.team .row {
+    margin-top: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin-left: 10px;
+    }
+}
